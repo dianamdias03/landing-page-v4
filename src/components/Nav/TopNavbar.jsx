@@ -29,7 +29,7 @@ export default function TopNavbar() {
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
             <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              fanatic
+              Anna Ribeiro
             </h1>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
@@ -38,47 +38,35 @@ export default function TopNavbar() {
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
-                Home
+                Sobre mim
               </Link>
             </li>
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
-                Services
+              <Link activeClass="active" style={{ padding: "10px 15px" }} to="treatments" spy={true} smooth={true} offset={-180}>
+                Tratamentos
               </Link>
             </li>
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="projects" spy={true} smooth={true} offset={-80}>
-                Projects
+              <Link activeClass="active" style={{ padding: "10px 15px" }} to="expertise" spy={true} smooth={true} offset={-60}>
+                Especialidades
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+{/*            <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
                 Blog
               </Link>
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
-                Pricing
+                Depoimentos
               </Link>
-            </li>
+            </li>*/}
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
-                Contact
+                Contato
               </Link>
             </li>
           </UlWrapper>
-          <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
-              <a href="/" style={{ padding: "10px 30px 10px 0" }}>
-                Log in
-              </a>
-            </li>
-            <li className="semiBold font15 pointer flexCenter">
-              <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
-                Get Started
-              </a>
-            </li>
-          </UlWrapperRight>
         </NavInner>
       </Wrapper>
     </>

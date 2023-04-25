@@ -18,8 +18,9 @@ const Wrapper = styled.div`
   margin-top: 30px;
   img {
     width: 100%;
-    height: auto;
     margin: 20px 0;
+    max-height: 309px;
+    max-width: 376px;
   }
   h3 {
     padding-bottom: 10px;

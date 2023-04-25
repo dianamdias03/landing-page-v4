@@ -12,7 +12,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
         <div className="flexNullCenter">
           <LogoIcon />
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
+            Anna Ribeiro
           </h1>
         </div>
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
@@ -32,7 +32,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Home
+            Sobre mim
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -41,12 +41,12 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="services"
+            to="treatments"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-120}
           >
-            Services
+            Tratamentos
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -55,15 +55,15 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="projects"
+            to="expertise"
             spy={true}
             smooth={true}
             offset={-60}
           >
-            Projects
+            Especialidades
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
+{/*        <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
@@ -88,9 +88,9 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Pricing
+            Depoimentos
           </Link>
-        </li>
+  </li>*/}
         <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
@@ -102,20 +102,8 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Contact
+            Contato
           </Link>
-        </li>
-      </UlStyle>
-      <UlStyle className="flexSpaceCenter">
-        <li className="semiBold font15 pointer">
-          <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
-            Log in
-          </a>
-        </li>
-        <li className="semiBold font15 pointer flexCenter">
-          <a href="/" className="radius8 lightBg" style={{ padding: "10px 15px" }}>
-            Get Started
-          </a>
         </li>
       </UlStyle>
     </Wrapper>

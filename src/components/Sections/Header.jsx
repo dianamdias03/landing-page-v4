@@ -12,28 +12,28 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
-          <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          <h1 className="extraBold font40">Anna Ribeiro</h1>
+          <h3 className="font20 semiBold">Psicóloga Clínica | CRP 03/64921</h3>
+          <HeaderP className="font16">
+            Psicóloga clínica experiente em ajudar pessoas com ansiedade, depressão, transtornos alimentares, traumas, relacionamentos e questões familiares. Ofereço um ambiente terapêutico acolhedor e seguro, adaptado às necessidades individuais de cada cliente. Utilizo uma variedade de técnicas terapêuticas comprovadas para ajudar meus clientes a alcançarem seus objetivos terapêuticos. Entre em contato para agendar uma consulta e dar o primeiro passo em direção a uma vida mais saudável e feliz.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <FullButton title="Entre em Contato" />
           </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} />
+          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9, maxHeight: 607, maxWidth: 427}} />
           <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
+                <em>O que é necessário para mudar uma pessoa é mudar sua consciência de si mesma.</em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
+              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Abraham Maslow</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
@@ -78,7 +78,7 @@ const RightSide = styled.div`
   }
 `;
 const HeaderP = styled.div`
-  max-width: 470px;
+  max-width: 480px;
   padding: 15px 0 50px 0;
   line-height: 1.5rem;
   @media (max-width: 960px) {
