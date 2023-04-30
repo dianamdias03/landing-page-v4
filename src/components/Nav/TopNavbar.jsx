@@ -51,7 +51,7 @@ export default function TopNavbar() {
                 Especialidades
               </Link>
             </li>
-{/*            <li className="semiBold font15 pointer">
+            <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
                 Blog
               </Link>
@@ -60,7 +60,7 @@ export default function TopNavbar() {
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
                 Depoimentos
               </Link>
-            </li>*/}
+            </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
                 Contato
@@ -91,18 +91,13 @@ const BurderWrapper = styled.button`
   height: 100%;
   padding: 0 15px;
   display: none;
-  @media (max-width: 760px) {
+  @media (max-width: 820px) {
     display: block;
   }
 `;
 const UlWrapper = styled.ul`
   display: flex;
-  @media (max-width: 760px) {
-    display: none;
-  }
-`;
-const UlWrapperRight = styled.ul`
-  @media (max-width: 760px) {
+  @media (max-width: 820px) {
     display: none;
   }
 `;

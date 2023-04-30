@@ -1,9 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// Assets
-import ContactImg1 from "../../assets/img/contact-1.png";
-import ContactImg2 from "../../assets/img/contact-2.png";
-import ContactImg3 from "../../assets/img/contact-3.png";
 
 export default function Contact() {
   return (
@@ -17,13 +13,13 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
                 <label className="font13">Nome:</label>
-                <input type="text" id="fname" name="fname" className="font20 extraBold" />
+                <input type="text" id="fname" name="fname"/>
                 <label className="font13">Email:</label>
-                <input type="text" id="email" name="email" className="font20 extraBold" />
+                <input type="text" id="email" name="email"/>
                 <label className="font13">Assunto:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
+                <input type="text" id="subject" name="subject"/>
                 <label className="font13">Mensagem:</label>
-                <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
+                <textarea rows="4" cols="50" type="text" id="message" name="message"/>
               </Form>
               <SumbitWrapper className="flex">
                 <ButtonInput type="submit" value="Enviar" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
@@ -57,6 +53,7 @@ const Form = styled.form`
     border-bottom: 1px solid #707070;
     height: 30px;
     margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
   }
   textarea {
     min-height: 100px;
@@ -81,11 +78,7 @@ const ButtonInput = styled.input`
     margin: 0 auto;
   }
 `;
-const ContactImgBox = styled.div`
-  max-width: 180px; 
-  align-self: flex-end; 
-  margin: 10px 30px 10px 0;
-`;
+
 const SumbitWrapper = styled.div`
   @media (max-width: 991px) {
     width: 100%;
