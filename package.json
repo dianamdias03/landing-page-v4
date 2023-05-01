@@ -1,5 +1,5 @@
 {
-  "name": "landing-page-v1",
+  "name": "landing-page-v3",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -46,7 +46,7 @@
     ]
   },
   "main": "index.js",
-  "repository": "https://github.com/dianamdias03/landing-page-v1.git",
+  "repository": "https://github.com/dianamdias03/landing-page-v3.git",
   "author": "Diana Manarim Dias <dianamdias03@gmail.com>",
   "license": "MIT"
 }
