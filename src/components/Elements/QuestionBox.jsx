@@ -53,9 +53,9 @@ const NavInner = styled.div`
   position: relative;
   height: 100%;
   border-radius: 10px 10px 10px 10px;
-  background-color: #7620ff;
+  background-color: #66839C;
   :hover {
-    background-color: #580cd2;
+    background-color: #475B6D;
   }
 `
 

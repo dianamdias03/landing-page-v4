@@ -39,10 +39,10 @@
   }
   a {
     text-decoration: none!important;
-    color: #0B093B;
+    color: #2A384C;
   }
   a:hover {
-    color: #7620FF;
+    color: #2A384C;
   }
   input:-webkit-autofill {
     -webkit-box-shadow:0 0 0 50px #fff inset; /* Change the color to your own background color */
@@ -51,7 +51,7 @@
   }
   body {
     background: #fff;
-    color: #0B093B;
+    color: #2A384C;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     font-size: 16px;
@@ -104,8 +104,8 @@
     width: 100%;
   }
   .active {
-    border-bottom: 2px solid #7620FF;
-    color: #7620FF;
+    border-bottom: 2px solid #2A384C;
+    color: #2A384C;
   }
   .tag {
     padding: 5px 10px;
@@ -224,10 +224,10 @@
   }
   /* COLORS */
   .darkColor {
-    color: #0B093B;
+    color: #2A384C;
   }
   .purpleColor {
-    color: #7620FF;
+    color: #1e2735;
   }
   .orangeColor {
     color: #F2B300;
@@ -249,10 +249,10 @@
   }
   /* BACKGROUNDS */
   .darkBg {
-    background-color: #0B093B;
+    background-color: #2A384C;
   }
-  .purpleBg {
-    background-color: #7620FF;
+  .orangeLightBg {
+    /*background-color: #2A384C;*/
   }
   .orangeBg {
     background-color: #F2B300;
@@ -272,3 +272,11 @@
   .whiteBg {
     background-color: #fff;
   }
+  .contactBg{
+    background-color: #66839C;
+    opacity: 0.9;
+    background-image: url("../assets/img/brain.png");
+    background-repeat: repeat;
+    background-size: 100px;
+  }
+

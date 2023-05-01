@@ -26,14 +26,11 @@ export default function Header() {
         <ImageWrapper>
           <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9, maxHeight: 607, maxWidth: 427}} />
           <QuoteWrapper className="flexCenter darkBg radius8">
-            <QuotesWrapper>
-              <QuotesIcon />
-            </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
                 <em>O que é necessário para mudar uma pessoa é mudar sua consciência de si mesma.</em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Abraham Maslow</p>
+              <p className="font13 whiteColor textRight" style={{marginTop: '10px'}}>Abraham Maslow</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>

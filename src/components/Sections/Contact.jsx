@@ -1,32 +1,46 @@
 import React from "react";
 import styled from "styled-components";
+// Components
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import PlaceIcon from '@mui/icons-material/Place';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FullButton from "../Buttons/FullButton";
 
 export default function Contact() {
   return (
-    <Wrapper id="contact">
-      <div className="lightBg">
+    <Wrapper id="contact" className="contactBg">
+      <div>
         <div className="container">
-          <HeaderInfo>
-            <h1 className="font40 extraBold">Entre em Contato</h1>
-          </HeaderInfo>
-          <div className="row" style={{ paddingBottom: "30px" }}>
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Form>
-                <label className="font13">Nome:</label>
-                <input type="text" id="fname" name="fname"/>
-                <label className="font13">Email:</label>
-                <input type="text" id="email" name="email"/>
-                <label className="font13">Assunto:</label>
-                <input type="text" id="subject" name="subject"/>
-                <label className="font13">Mensagem:</label>
-                <textarea rows="4" cols="50" type="text" id="message" name="message"/>
-              </Form>
-              <SumbitWrapper className="flex">
-                <ButtonInput type="submit" value="Enviar" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
-              </SumbitWrapper>
-            </div>
-          </div>
+          <TablesWrapper className="flexCenter">
+            <TableBox>
+              <WrapperBox className="whiteBg radius8 shadow">
+                <div className="flexCenter">
+                  <p className="font25 extraBold">{"Entre em Contato"}</p>
+                </div>
+                <div style={{ margin: "30px 0", textAlign: "center"}} className="flexCenter">
+                  <p className="font16">{"Atendimento para adolescentes e adultos"}</p>
+                </div>
+                <div>
+                  <div className="flexCenter" style={{ margin: "15px 0" }}>
+                    <h4 className="font30 extraBold">
+                      <a href="https://web.whatsapp.com/send/?phone=555548992112596&text=Ol%C3%A1%2C+vim+pelo+site%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta.&type=phone_number&app_absent=0" target="_blank"><WhatsAppIcon fontSize="large" style={{padding: "0px 10px", verticalAlign: 'top', color: 'green'}}/>{"(48) 95741-4652"}</a>
+                    </h4>
+                  </div>
+                </div>
+                <div style={{ margin: "30px 0" }} className="flexCenter">
+                  <p className="font16"><MailOutlineIcon fontSize="small" style={{padding: "0px 10px", verticalAlign: 'top'}}/>{"email@gmail.com"}</p>
+                </div>
+                <div style={{ margin: "30px 0", textAlign: "center"}} className="flexCenter">
+                  <p className="font14"><PlaceIcon fontSize="small" style={{padding: "0px 10px", verticalAlign: 'top'}}/>{"Rua Ana Pereira de Melo nº 000- Sala 000/ 10 andar . CEP 00000-000- São Paulo/SP"}</p>
+                </div>
+              </WrapperBox>
+            </TableBox>
+          </TablesWrapper>
         </div>
+      </div>
+      <div className="flexCenter whiteColor" style={{ margin: "30px 0"}}>
+        <InstagramIcon fontSize="large" style={{padding: "0px 10px"}}/><p className="font20 extraBold"><a className="whiteColor" href="https://www.instagram.com/" target="_blank">{"@annaribeiro.psi"}</a></p>
       </div>
     </Wrapper>
   );
@@ -34,61 +48,36 @@ export default function Contact() {
 
 const Wrapper = styled.section`
   width: 100%;
+  padding: 120px;
+  @media (max-width: 860px) {
+    padding: 100px 0px;
+  }
 `;
 const HeaderInfo = styled.div`
-  padding: 70px 0 30px 0;
+  margin-bottom: 50px;
   @media (max-width: 860px) {
     text-align: center;
   }
 `;
-const Form = styled.form`
-  padding: 70px 0 30px 0;
-  input,
-  textarea {
-    width: 100%;
-    background-color: transparent;
-    border: 0px;
-    outline: none;
-    box-shadow: none;
-    border-bottom: 1px solid #707070;
-    height: 30px;
-    margin-bottom: 30px;
-    font-family: 'Lato', sans-serif;
-  }
-  textarea {
-    min-height: 100px;
-  }
+const TablesWrapper = styled.div`
   @media (max-width: 860px) {
-    padding: 30px 0;
+    flex-direction: column;
   }
 `;
-const ButtonInput = styled.input`
-  border: 1px solid #7620ff;
-  background-color: #7620ff;
-  width: 100%;
-  padding: 15px;
-  outline: none;
-  color: #fff;
-  :hover {
-    background-color: #580cd2;
-    border: 1px solid #7620ff;
-    color: #fff;
-  }
-  @media (max-width: 991px) {
-    margin: 0 auto;
-  }
-`;
-
-const SumbitWrapper = styled.div`
-  @media (max-width: 991px) {
+const TableBox = styled.div`
+  width: 40%;
+  @media (max-width: 860px) {
     width: 100%;
-    margin-bottom: 50px;
+    max-width: 370px;
+    margin: 0 auto
   }
 `;
 
-
-
-
+const WrapperBox = styled.div`
+  width: 100%;
+  text-align: left;
+  padding: 20px 30px;
+`;
 
 
 
