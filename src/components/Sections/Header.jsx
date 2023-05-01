@@ -13,7 +13,7 @@ export default function Header() {
       <LeftSide className="flexCenter">
         <div>
           <h1 className="extraBold font40">Anna Ribeiro</h1>
-          <h3 className="font20 semiBold">Psicóloga Clínica | CRP 03/64921</h3>
+          <h3 className="font20 semiBold">Psicóloga Clínica | CRP 00/00000</h3>
           <HeaderP className="font16">
             Psicóloga clínica experiente em ajudar pessoas com ansiedade, depressão, transtornos alimentares, traumas, relacionamentos e questões familiares. Ofereço um ambiente terapêutico acolhedor e seguro, adaptado às necessidades individuais de cada cliente. Utilizo uma variedade de técnicas terapêuticas comprovadas para ajudar meus clientes a alcançarem seus objetivos terapêuticos. Entre em contato para agendar uma consulta e dar o primeiro passo em direção a uma vida mais saudável e feliz.
           </HeaderP>

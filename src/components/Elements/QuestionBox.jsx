@@ -19,9 +19,12 @@ export default function QuestionBox({id, question, answer, open, setOpen}) {
       </NavInner>
       <Collapsible open={open.includes(id)}>
         <CollapsibleBody className="font16">
-          <p className="container">
-            {answer}
-          </p>
+          {answer.split(/\r?\n/).map((item) => {
+            return(
+              <p className="container">
+                {item}
+              </p>);
+          })}
         </CollapsibleBody>
       </Collapsible>
     </TableBox>
