@@ -5,7 +5,6 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PlaceIcon from '@mui/icons-material/Place';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import FullButton from "../Buttons/FullButton";
 
 export default function Contact() {
   return (
@@ -24,7 +23,7 @@ export default function Contact() {
                 <div>
                   <div className="flexCenter" style={{ margin: "15px 0" }}>
                     <h4 className="font30 extraBold">
-                      <a href="https://web.whatsapp.com/send/?phone=555548992112596&text=Ol%C3%A1%2C+vim+pelo+site%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta.&type=phone_number&app_absent=0" target="_blank"><WhatsAppIcon fontSize="large" style={{padding: "0px 10px", verticalAlign: 'top', color: 'green'}}/>{"(48) 95741-4652"}</a>
+                      <a href="https://web.whatsapp.com/send/?phone=555548992112596&text=Ol%C3%A1%2C+vim+pelo+site%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta.&type=phone_number&app_absent=0" rel="noreferrer" target="_blank"><WhatsAppIcon fontSize="large" style={{padding: "0px 10px", verticalAlign: 'top', color: 'green'}}/>{"(48) 95741-4652"}</a>
                     </h4>
                   </div>
                 </div>
@@ -40,7 +39,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="flexCenter whiteColor" style={{ margin: "30px 0"}}>
-        <InstagramIcon fontSize="large" style={{padding: "0px 10px"}}/><p className="font20 extraBold"><a className="whiteColor" href="https://www.instagram.com/" target="_blank">{"@annaribeiro.psi"}</a></p>
+        <InstagramIcon fontSize="large" style={{padding: "0px 10px"}}/><p className="font20 extraBold"><a className="whiteColor" href="https://www.instagram.com/" target="_blank" rel="noreferrer">{"@annaribeiro.psi"}</a></p>
       </div>
     </Wrapper>
   );
@@ -51,12 +50,6 @@ const Wrapper = styled.section`
   padding: 120px;
   @media (max-width: 860px) {
     padding: 100px 0px;
-  }
-`;
-const HeaderInfo = styled.div`
-  margin-bottom: 50px;
-  @media (max-width: 860px) {
-    text-align: center;
   }
 `;
 const TablesWrapper = styled.div`

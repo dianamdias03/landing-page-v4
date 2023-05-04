@@ -8,7 +8,7 @@ export default function QuestionBox({id, question, answer, open, setOpen}) {
   return (
     <TableBox 
       onClick={() => {
-        setOpen(open.includes(id) ? open => open.filter(item => item != id) : open => [...open, id])
+        setOpen(open.includes(id) ? open => open.filter(item => item !== id) : open => [...open, id])
       }}
     >
       <NavInner className="container flexSpaceCenter">
@@ -21,7 +21,7 @@ export default function QuestionBox({id, question, answer, open, setOpen}) {
         <CollapsibleBody className="font16">
           {answer.split(/\r?\n/).map((item) => {
             return(
-              <p className="container">
+              <p className="container" key={id+item}>
                 {item}
               </p>);
           })}
