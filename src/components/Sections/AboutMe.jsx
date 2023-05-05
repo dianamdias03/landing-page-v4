@@ -19,7 +19,7 @@ export default function AboutMe() {
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <h2 className="font40 extraBold">Anna Ribeiro</h2>
+              <h2 className="font40 extraBold">Mariana Lima</h2>
               <h4 className="font15 semiBold">Psicóloga Clínica | CRP 03/64921</h4>
               <HeaderP className="font16">
                 Psicóloga clínica experiente em ajudar pessoas com ansiedade, depressão, transtornos alimentares, traumas, relacionamentos e questões familiares. Ofereço um ambiente terapêutico acolhedor e seguro, adaptado às necessidades individuais de cada cliente. Utilizo uma variedade de técnicas terapêuticas comprovadas para ajudar meus clientes a alcançarem seus objetivos terapêuticos. Entre em contato para agendar uma consulta e dar o primeiro passo em direção a uma vida mais saudável e feliz.

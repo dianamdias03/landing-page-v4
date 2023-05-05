@@ -8,48 +8,15 @@ import Dots from "../../assets/svg/Dots";
 
 export default function Header() {
   return (
-    <Wrapper id="home" className="container flexSpaceCenter">
-      <LeftSide className="flexCenter">
-        <div>
-          <h1 className="extraBold font40">Anna Ribeiro</h1>
-          <h3 className="font20 semiBold">Psicóloga Clínica | CRP 00/00000</h3>
-          <HeaderP className="font16">
-            Psicóloga clínica experiente em ajudar pessoas com ansiedade, depressão, transtornos alimentares, traumas, relacionamentos e questões familiares. Ofereço um ambiente terapêutico acolhedor e seguro, adaptado às necessidades individuais de cada cliente. Utilizo uma variedade de técnicas terapêuticas comprovadas para ajudar meus clientes a alcançarem seus objetivos terapêuticos. Entre em contato para agendar uma consulta e dar o primeiro passo em direção a uma vida mais saudável e feliz.
-          </HeaderP>
-          <BtnWrapper>
-            <FullButton title="Entre em Contato" />
-          </BtnWrapper>
-        </div>
-      </LeftSide>
-      <RightSide>
-        <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9, maxHeight: 607, maxWidth: 427}} />
-          <QuoteWrapper className="flexCenter darkBg radius8">
-            <div>
-              <p className="font15 whiteColor">
-                <em>O que é necessário para mudar uma pessoa é mudar sua consciência de si mesma.</em>
-              </p>
-              <p className="font13 whiteColor textRight" style={{marginTop: '10px'}}>Abraham Maslow</p>
-            </div>
-          </QuoteWrapper>
-          <DotsWrapper>
-            <Dots />
-          </DotsWrapper>
-        </ImageWrapper>
-        <GreyDiv className="lightBg"></GreyDiv>
-      </RightSide>
-    </Wrapper>
+    <div id="home" className="headerBg">
+      <h2 className="font40 extraBold relative">Seja bem vindo a sua jornada de autoconhecimento</h2>
+    </div>
   );
 }
 
 
 const Wrapper = styled.section`
-  padding-top: 80px;
   width: 100%;
-  min-height: 840px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
 `;
 const LeftSide = styled.div`
   width: 50%;

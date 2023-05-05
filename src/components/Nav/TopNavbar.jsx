@@ -7,6 +7,7 @@ import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -24,39 +25,39 @@ export default function TopNavbar() {
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
+      <Wrapper className="flexCenter animate mapleBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <LogoIcon />
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              Anna Ribeiro
+            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold esteban lightPinkColor">
+              Mariana <br/> Lima
             </h1>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
-            <BurgerIcon />
+            <MenuRoundedIcon fontSize="large" style={{color: "#ffede4" }}/>
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
-            <li className="semiBold font15 pointer">
+            <li className="semiBold font15 pointer whiteColor">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
                 Sobre mim
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            <li className="semiBold font15 pointer whiteColor">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="treatments" spy={true} smooth={true} offset={-180}>
                 Tratamentos
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            <li className="semiBold font15 pointer whiteColor">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="expertise" spy={true} smooth={true} offset={-60}>
                 Especialidades
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            <li className="semiBold font15 pointer lightColor">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="questions" spy={true} smooth={true} offset={-60}>
                 Dúvidas Frequentes
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            <li className="semiBold font15 pointer lightColor">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-60}>
                 Contato
               </Link>
