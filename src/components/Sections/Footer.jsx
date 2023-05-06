@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 // Assets
 import LogoImg from "../../assets/svg/Logo";
+import LogoIcon from "../../assets/svg/Logo";
 
 export default function Contact() {
 
@@ -12,13 +13,13 @@ export default function Contact() {
 
   return (
     <Wrapper>
-      <div className="darkBg">
+      <div className="mapleBg">
         <div className="container">
           <InnerWrapper className="flexSpaceCenter" style={{ padding: "30px 0" }}>
             <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>
-              <LogoImg />
-              <h1 className="font15 extraBold whiteColor" style={{ marginLeft: "15px" }}>
-                Mariana Lima
+              <LogoIcon size={40}/>
+              <h1 style={{ marginLeft: "15px" }} className="font20 extraBold esteban lightPinkColor">
+                Mariana <br/> Lima
               </h1>
             </Link>
             <StyleP className="whiteColor font13">

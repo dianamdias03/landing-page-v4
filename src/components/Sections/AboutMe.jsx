@@ -3,35 +3,38 @@ import styled from "styled-components";
 // Components
 import FullButton from "../Buttons/FullButton";
 // Assets
-import about from "../../assets/img/about-img.png";
+import about from "../../assets/img/about1.jpg";
+import decor from "../../assets/img/decor.png";
 
 export default function AboutMe() {
   return (
     <Wrapper id="AboutMe">
-      <div className="lightBg">
+      <div className="lightPinkBg2">
         <div className="container">
           <Advertising className="flexSpaceCenter">
             <AddLeft>
               <AddLeftInner>
                 <ImgWrapper className="flexCenter">
-                  <img className="radius8" src={about} alt="add" />
+                  <img src={about} alt="add" />  
                 </ImgWrapper>
-              </AddLeftInner>
+                </AddLeftInner>
             </AddLeft>
-            <AddRight>
-              <h2 className="font40 extraBold">Mariana Lima</h2>
-              <h4 className="font15 semiBold">Psicóloga Clínica | CRP 03/64921</h4>
-              <HeaderP className="font16">
-                Psicóloga clínica experiente em ajudar pessoas com ansiedade, depressão, transtornos alimentares, traumas, relacionamentos e questões familiares. Ofereço um ambiente terapêutico acolhedor e seguro, adaptado às necessidades individuais de cada cliente. Utilizo uma variedade de técnicas terapêuticas comprovadas para ajudar meus clientes a alcançarem seus objetivos terapêuticos. Entre em contato para agendar uma consulta e dar o primeiro passo em direção a uma vida mais saudável e feliz.
-              </HeaderP>
-              <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
-                <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
-                </div>
-                <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                </div>
-              </ButtonsRow>
+            <AddRight className="textCenter">
+                <h4 className="font15 semiBold">Psicóloga Clínica</h4>
+                <h2 className="font40 extraBold">Mariana Lima</h2>
+                <ImgWrapper className="flexCenter">
+                  <img src={decor} alt="add" style={{maxWidth: "300px"}}/>  
+                </ImgWrapper>
+                <HeaderP className="font18">
+                    Eu sou a Mariana Lima, psicóloga clínica com experiência em ajudar pessoas a superar dificuldades emocionais e comportamentais. Acredito que cada pessoa é única e, por isso, ofereço um atendimento personalizado e adaptado às necessidades individuais de cada cliente.
+                    Atuo com diversas questões, como ansiedade, depressão, fobias, traumas, problemas de relacionamento, dentre outros. Utilizo uma abordagem integrativa, que combina técnicas de diferentes abordagens psicológicas para oferecer um tratamento eficaz e satisfatório aos meus clientes.
+                    Se você busca ajuda para lidar com questões emocionais e comportamentais, conte comigo para ajudá-lo(a) a encontrar novos caminhos e recursos para viver uma vida mais plena e satisfatória. Entre em contato para agendar uma consulta e iniciar sua jornada rumo ao bem-estar emocional e psicológico.
+                </HeaderP>
+                <ButtonsRow className="flexCenter" style={{ margin: "10px 0" }}>
+                  <div style={{ width: "190px" }}>
+                    <FullButton title="Entre em Contato" action={() => alert("clicked")} />
+                  </div>
+                </ButtonsRow>
             </AddRight>
           </Advertising>
         </div>
@@ -50,7 +53,7 @@ const HeaderInfo = styled.div`
 `;
 const Advertising = styled.div`
   padding: 100px 0;
-  margin: 100px 0;
+  margin: 100px 0 0 0;
   position: relative;
   @media (max-width: 1160px) {
     padding: 60px 0 40px 0;
@@ -62,9 +65,7 @@ const Advertising = styled.div`
   }
 `;
 const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
+  
 `;
 const AddLeft = styled.div`
   position: relative;
@@ -123,8 +124,7 @@ const ImgWrapper = styled.div`
 `;
 
 const HeaderP = styled.div`
-  max-width: 480px;
-  padding: 15px 0 50px 0;
+  padding: 50px 0 50px 0;
   line-height: 1.5rem;
   @media (max-width: 960px) {
     padding: 15px 0 50px 0;

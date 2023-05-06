@@ -1,7 +1,7 @@
 import * as React from "react";
 
-export default function LogoIcon() {
+export default function LogoIcon({size = 50}) {
   return (
-    <img width={50} height={50} src="/psychology.png" alt="/logo192.png" />
+    <img width={size} height={size} src="/psychology.png" alt="/logo192.png" />
   );
 }

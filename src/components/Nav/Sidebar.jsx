@@ -7,14 +7,9 @@ import LogoIcon from "../../assets/svg/Logo";
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
-    <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
+    <Wrapper className="animate mapleBgOpacity" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
-        <div className="flexNullCenter">
-          <LogoIcon />
-          <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            Mariana Lima
-          </h1>
-        </div>
+        <div></div>
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
           <CloseIcon />
         </CloseBtn>

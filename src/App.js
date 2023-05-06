@@ -13,6 +13,7 @@ export default function App() {
           <link href="https://fonts.googleapis.com/css2?family=Esteban:wght@400;600;800&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;800&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Comme:wght@400;600;800&display=swap" rel="stylesheet" />
         </Helmet>
         <Landing />
       </HelmetProvider>

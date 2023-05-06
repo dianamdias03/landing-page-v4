@@ -51,7 +51,7 @@
   body {
     background: #fff;
     color: #2A384C;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Comme', sans-serif;
     overflow-x: hidden;
     font-size: 16px;
     font-weight: 400;
@@ -139,6 +139,11 @@
   .flexSpaceNull {
     display: flex;
     justify-content: space-between;
+  }
+
+  .alignRight{
+    position: relative;
+    float: right;
   }
 
   /* FONT SIZES */
@@ -259,9 +264,6 @@
   .darkBg {
     background-color: #2A384C;
   }
-  .orangeLightBg {
-    /*background-color: #2A384C;*/
-  }
   .orangeBg {
     background-color: #F2B300;
   }
@@ -292,21 +294,30 @@
     background-color: #945f62;
   }
 
+  .mapleBgOpacity{
+    background-color: rgba(149, 95, 98, 0.76);
+  }
+
   .lightPinkBg{
     background-color: #ffede4;
   }
 
+  .lightPinkBg2{
+    background-color: #fcf7f4;
+  }
+    
   .headerBg{
     width: 100vw;
     height: 100vh;
     margin-left: auto;
-    background: url("../assets/img/about3.jpg") top/cover no-repeat;
+    background: url("../assets/img/about3_bg.png") top/cover no-repeat;
+    background-color: #ffede4;;
     clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 73%);
     @media(max-width:770px) {
       clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
-      background: url("../assets/img/about2.jpg") center/cover no-repeat;
+      background: url("../assets/img/about3_bg_sm.png") center/cover no-repeat;
     }
-  }
+  } 
 
   .esteban{
     font-family: 'Esteban', sans-serif;

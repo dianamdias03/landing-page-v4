@@ -2,7 +2,7 @@ import React from "react";
 // Sections
 import TopNavbar from "../components/Nav/TopNavbar";
 import Header from "../components/Sections/Header";
-import Contact from "../components/Sections/Contact";
+import AboutMe from "../components/Sections/AboutMe";
 import Footer from "../components/Sections/Footer"
 import Treatments from "../components/Sections/Treatments";
 import Expertise from "../components/Sections/Expertise";
@@ -14,11 +14,12 @@ export default function Landing() {
     <>
       <TopNavbar />
       <Header />
-      <Treatments/>
+      <AboutMe/>
+      {/*<Treatments/>
       <Expertise/>
       <Questions/>
       <Contact />
-      <Maps/>
+      <Maps/>*/}
       <Footer />
     </>
   );
