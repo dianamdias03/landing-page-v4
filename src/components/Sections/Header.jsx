@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 
 export default function Header() {
   return (
-    <div id="home" className="headerBg">
+    <Header id="home">
       <div className="">
         <div className="container">
           <Advertising>
@@ -22,9 +22,20 @@ export default function Header() {
           </Advertising>
         </div>
     </div>
-    </div>
+    </Header>
   );
 }
+
+const Header = styled.div`
+  width: 100vw;
+  height: 100vh;
+  margin-left: auto;
+  background: url("../assets/img/about3_bg.png") top/cover no-repeat;
+  background-color: #ffede4;;
+  @media(max-width:770px) {
+    background: url("../assets/img/about3_bg_sm.png") center/cover no-repeat;
+  }
+`
 
 
 const Wrapper = styled.section`
