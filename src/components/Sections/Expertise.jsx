@@ -2,62 +2,64 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
-// Assets
-import Anxiety from "../../assets/img/anxiety.jpg";
-import Depression from "../../assets/img/depression.jpg";
-import EatingDisorder from "../../assets/img/eating-disorder.jpg";
-import EmotionalHealth from "../../assets/img/emotional-health.jpg";
-import Relationship from "../../assets/img/relationship.jpg";
-import SelfEsteem from "../../assets/img/self-esteem.jpg";
+import Anxiety from "../../assets/img/anxiety.png";
+import Burnout from "../../assets/img/burnout.png";
+import Fear from "../../assets/img/fear.png";
+import Stress from "../../assets/img/stress.png";
+import Insecurity from "../../assets/img/insecurity.png";
+import Shyness from "../../assets/img/shyness.png";
+import decor from "../../assets/img/decor.png";
 
 export default function Expertise() {
 
   const expertises = [
     {
       "title": "Ansiedade",
-      "description": "Apesar de ser uma emoção normal, quando excessiva torna-se prejudicial. Normalmente, vem acompanhada de desconforto, seja físico ou não. Portanto, acaba prejudicando a sua vida pessoal e profissional.",
-      "img": Anxiety
+      "description": "A ansiedade é uma resposta natural do organismo a situações de estresse, perigo ou incerteza, que pode ser percebida como sensações de preocupação, medo, nervosismo, tensão, entre outras. No entanto, quando essa resposta se torna excessiva e frequente, interferindo na qualidade de vida e nas atividades diárias, pode ser considerada um transtorno de ansiedade.",
+      "icon": Anxiety
     },
     {
-      "title": "Relacionamentos",
-      "description": "Bons relacionamentos são construídos através da comunicação. Caso ela não exista ou contenha ruídos, os laços correm risco de ter prazo de validade.",
-      "img": Relationship
+      "title": "Burnout",
+      "description": "O burnout é um problema comum em muitas pessoas, especialmente em profissionais que trabalham em áreas com alto nível de estresse, como médicos, enfermeiros, professores, advogados, entre outros. É caracterizado por sentimentos de exaustão emocional, despersonalização e diminuição da realização pessoal.",
+      "icon": Burnout
     },
     {
-      "title": "Saúde emocional",
-      "description": "A Psicologia ajuda você a desconstruir percepções, dar adeus aos pensamentos limitantes e a crenças prejudiciais que são alimentadas por nós por anos. Assim, você consegue trilhar um caminho leve e tranquilo.",
-      "img": EmotionalHealth
+      "title": "Estresse",
+      "description": "O estresse é uma resposta natural do corpo a situações desafiadoras ou ameaçadoras e pode ser desencadeado por diversos fatores. Em curto prazo, ele pode até ser benéfico para a motivação e desempenho. No entanto, quando é crônico ou excessivo, pode ser prejudicial para a saúde física e mental.",
+      "icon": Stress
     },
     {
-      "title": "Autoestima",
-      "description": "Ame-se do jeito que você é! Valorize a sua identidade, confie em si mesmo e reconheça o seu valor.",
-      "img": SelfEsteem
+      "title": "Medo",
+      "description": "O medo é uma emoção natural e necessária para a sobrevivência, pois nos ajuda a identificar perigos e a tomar medidas para nos proteger. No entanto, quando o medo se torna excessivo e interfere na vida diária, pode se tornar um problema de saúde mental.",
+      "icon": Fear
     },
     {
-      "title": "Transtorno Alimentar",
-      "description": "A Psicologia vai te ajudar a entender o que está acontecendo, reconhecer os sinais, principalmente aqueles que antecedem uma crise, bem como para sair dos ciclos que contribuem para o quadro.",
-      "img": EatingDisorder
+      "title": "Insegurança",
+      "description": "A insegurança é um sentimento comum que pode afetar a autoestima e a confiança de uma pessoa. Ela pode ser desencadeada por diversos fatores, como a falta de autoconhecimento, experiências traumáticas ou negativas, críticas de outras pessoas, entre outros.",
+      "icon": Insecurity
     },
     {
-      "title": "Depressão",
-      "description": "A terapia é parte fundamental de qualquer tratamento para depressão. Um psicólogo ajuda a identificar as origens do problema, que podem ser surpreendentes até mesmo para o próprio paciente.",
-      "img": Depression
+      "title": "Timidez",
+      "description": "A timidez é um sentimento de inibição ou desconforto em situações sociais ou em interações com outras pessoas. É uma característica comum em muitas pessoas, mas pode se tornar um problema quando interfere na vida diária e nas relações interpessoais.",
+      "icon": Shyness
     }
   ]
 
   return (
     <Wrapper id="expertise">
-      <div className="whiteBg">
+      <div className="lightPinkBg2" style={{ padding: "0 0 100px" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Especialidades</h1>
+            <h1 className="font40 textCenter">Áreas de Atuação</h1>
+            <h2 className="font13 textCenter">Tratamentos e demandas mais frequentes que atendo atualmente</h2>
           </HeaderInfo>
           <div className="row textCenter">
             {expertises.map((item) => {
+              console.log(item)
               return (
                 <div key={item.title} className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <ProjectBox
-                    img={item.img}
+                    icon={item.icon}
                     title={item.title}
                     text={item.description}
                   />
@@ -72,10 +74,11 @@ export default function Expertise() {
 }
 
 const Wrapper = styled.section`
-  padding: 40px;
   width: 100%;
 `;
+
 const HeaderInfo = styled.div`
+  padding: 20px 0;
   @media (max-width: 860px) {
     text-align: center;
   }

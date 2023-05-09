@@ -27,7 +27,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Sobre mim
+            Início
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -36,12 +36,12 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             activeClass="active"
             className="whiteColor"
             style={{ padding: "10px 15px" }}
-            to="treatments"
+            to="AboutMe"
             spy={true}
             smooth={true}
-            offset={-120}
+            offset={-60}
           >
-            Tratamentos
+            Sobre mim
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -53,37 +53,9 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             to="expertise"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-120}
           >
-            Especialidades
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="questions"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Dúvidas Frequentes
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Contato
+            Áreas de Atuação
           </Link>
         </li>
       </UlStyle>

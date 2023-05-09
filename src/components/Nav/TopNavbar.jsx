@@ -39,27 +39,17 @@ export default function TopNavbar() {
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer whiteColor">
               <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
-                Sobre mim
+                Início
               </Link>
             </li>
             <li className="semiBold font15 pointer whiteColor">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="treatments" spy={true} smooth={true} offset={-180}>
-                Tratamentos
+              <Link activeClass="active" style={{ padding: "10px 15px" }} to="AboutMe" spy={true} smooth={true} offset={-180}>
+                Sobre Mim
               </Link>
             </li>
             <li className="semiBold font15 pointer whiteColor">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="expertise" spy={true} smooth={true} offset={-60}>
-                Especialidades
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer lightColor">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="questions" spy={true} smooth={true} offset={-60}>
-                Dúvidas Frequentes
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer lightColor">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-60}>
-                Contato
+              <Link activeClass="active" style={{ padding: "10px 15px" }} to="expertise" spy={true} smooth={true} offset={-130}>
+                Áreas de Atuação
               </Link>
             </li>
           </UlWrapper>
