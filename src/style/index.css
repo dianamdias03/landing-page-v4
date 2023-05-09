@@ -66,6 +66,10 @@
     .container {
       padding: 0 15px;
     }
+
+    .headerBg{
+      background: url("../assets/img/about3_bg_sm.png") center/cover no-repeat;
+    }
   }
   .regular {
     font-weight: 400!important;
@@ -311,13 +315,16 @@
     height: 100vh;
     margin-left: auto;
     background: url("../assets/img/about3_bg.png") top/cover no-repeat;
-    background-color: #ffede4;;
-    @media(max-width:770px) {
-      background: url("../assets/img/about3_bg_sm.png") center/cover no-repeat;
-    }
+    background-color: #ffede4;
   } 
 
   .esteban{
     font-family: 'Esteban', sans-serif;
+  }
+
+  @media only screen and (max-width: 770px) {
+    .headerBg{
+      background: url("../assets/img/about3_bg_sm.png") center/cover no-repeat;
+    }
   }
 
