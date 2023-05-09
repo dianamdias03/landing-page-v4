@@ -53,9 +53,8 @@ export default function Expertise() {
             <h1 className="font40 textCenter">Áreas de Atuação</h1>
             <h2 className="font13 textCenter">Tratamentos e demandas mais frequentes que atendo atualmente</h2>
           </HeaderInfo>
-          <div className="row textCenter">
+          <div className="row textCenter flexCenter">
             {expertises.map((item) => {
-              console.log(item)
               return (
                 <div key={item.title} className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <ProjectBox
