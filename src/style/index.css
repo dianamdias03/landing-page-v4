@@ -312,9 +312,7 @@
     margin-left: auto;
     background: url("../assets/img/about3_bg.png") top/cover no-repeat;
     background-color: #ffede4;;
-    clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 73%);
     @media(max-width:770px) {
-      clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
       background: url("../assets/img/about3_bg_sm.png") center/cover no-repeat;
     }
   } 

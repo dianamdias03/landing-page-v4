@@ -53,15 +53,13 @@ const HeaderInfo = styled.div`
 `;
 const Advertising = styled.div`
   padding: 100px 0;
-  margin: 100px 0 0 0;
   position: relative;
   @media (max-width: 1160px) {
     padding: 60px 0 40px 0;
   }
   @media (max-width: 860px) {
     flex-direction: column;
-    padding: 0 0 30px 0;
-    margin: 80px 0 0px 0;
+    padding: 90px 0 30px 0;
   }
 `;
 const ButtonsRow = styled.div`
