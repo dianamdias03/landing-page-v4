@@ -56,7 +56,7 @@ export default function Expertise() {
           <div className="row textCenter flexCenter">
             {expertises.map((item) => {
               return (
-                <div key={item.title} className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div key={item.title} className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                   <ProjectBox
                     icon={item.icon}
                     title={item.title}
