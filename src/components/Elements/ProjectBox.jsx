@@ -16,17 +16,14 @@ export default function ProjectBox({ icon, title, text, action}) {
 }
 
 const Box = styled.div`
-  width: 90%;
+  width: 100%;
   padding: 20px 30px;
   margin-top: 30px;
   background-color: white;
-  height: 415px;
+  height: 350px;
   border-radius: 10px;
   box-shadow: 6px 7px 20px -7px rgba(148,133,148,1);
   position: 'relative'
-  @media (max-width: 860px) {
-    width: 100%;
-  }
 `;
 
 const Wrapper = styled.div`
