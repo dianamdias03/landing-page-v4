@@ -6,9 +6,9 @@ export default function ProjectBox({ icon, title, text, action}) {
     <Wrapper>
       <Box>
         <ImgBtn className="aniamte pointer" onClick={action ? () => action() : null}>
-          <img className="radius8" src={icon} alt="project" style={{height: '60px', width: '60px'}}></img>
+          <img className="radius8" src={icon} alt="project" style={{height: '80px', width: '80px', backgroundColor: "#cc9da0", padding: '10px', borderRadius: '50px', position: 'absolute', margin: 0, marginTop: '-65px', marginLeft: '-35px'}}></img>
         </ImgBtn>
-        <h3 className="font20 extraBold">{title}</h3>
+        <h3 className="font20 extraBold" style={{padding: '30px 0'}}>{title}</h3>
         <p className="font16">{text}</p>
       </Box>
     </Wrapper>
@@ -20,9 +20,10 @@ const Box = styled.div`
   padding: 20px 30px;
   margin-top: 30px;
   background-color: white;
-  height: 400px;
-  border-radius: 50px;
+  height: 415px;
+  border-radius: 10px;
   box-shadow: 6px 7px 20px -7px rgba(148,133,148,1);
+  position: 'relative'
   @media (max-width: 860px) {
     width: 100%;
   }
@@ -30,7 +31,7 @@ const Box = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  margin-top: 30px;
+  margin-top: 60px;
   img {
     width: 100%;
     margin: 20px 0;

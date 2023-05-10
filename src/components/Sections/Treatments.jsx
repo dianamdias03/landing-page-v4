@@ -20,7 +20,7 @@ export default function Treatments() {
               </AddLeftInner>
             </AddLeft>
             <AddRight>
-              <Title className="font30 extraBold">Como a terapia pode mudar sua vida</Title>
+              <Title className="font30">Como a terapia pode mudar sua vida</Title>
               <HeaderP className="font16">
                 Te ajudo a conquistar autonomia emocional a partir da compreensão das causas dos seus conflitos, construindo estratégias cotidianas e objetivas que focam na raiz do problema, conquistando assim uma mudança consciente e permanente.
               </HeaderP>
