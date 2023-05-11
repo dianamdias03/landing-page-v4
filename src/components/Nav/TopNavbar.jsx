@@ -52,6 +52,11 @@ export default function TopNavbar() {
                 Áreas de Atuação
               </Link>
             </li>
+            <li className="semiBold font15 pointer whiteColor">
+              <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-130}>
+                Contato
+              </Link>
+            </li>
           </UlWrapper>
         </NavInner>
       </Wrapper>

@@ -58,6 +58,20 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             Áreas de Atuação
           </Link>
         </li>
+        <li className="semiBold font15 pointer">
+          <Link
+            onClick={() => toggleSidebar(!sidebarOpen)}
+            activeClass="active"
+            className="whiteColor"
+            style={{ padding: "10px 15px" }}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-120}
+          >
+            Contato
+          </Link>
+        </li>
       </UlStyle>
     </Wrapper>
   );

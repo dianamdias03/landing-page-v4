@@ -7,6 +7,7 @@ import Footer from "../components/Sections/Footer"
 import Expertise from "../components/Sections/Expertise";
 import Questions from "../components/Sections/Questions";
 import Maps from "../components/Sections/Maps";
+import Contact from "../components/Sections/Contact";
 
 export default function Landing() {
   return (
@@ -17,8 +18,9 @@ export default function Landing() {
       <Expertise/>
       {/*<Treatments/>
       <Questions/>
-      <Contact />
+      
       <Maps/>*/}
+      <Contact />
       <Footer />
     </>
   );

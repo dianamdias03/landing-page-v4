@@ -1,45 +1,45 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import PlaceIcon from '@mui/icons-material/Place';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FullButton from "../Buttons/FullButton";
+// Assets
+import about from "../../assets/img/about1.jpg";
+import decor from "../../assets/img/decor.png";
 
 export default function Contact() {
   return (
-    <Wrapper id="contact" className="contactBg">
-      <div>
+    <Wrapper id="contact">
+      <div className="lightPinkBg2">
         <div className="container">
-          <TablesWrapper className="flexCenter">
-            <TableBox>
-              <WrapperBox className="whiteBg radius8 shadow">
-                <div className="flexCenter">
-                  <p className="font25 extraBold">{"Entre em Contato"}</p>
-                </div>
-                <div style={{ margin: "30px 0", textAlign: "center"}} className="flexCenter">
-                  <p className="font16">{"Atendimento para adolescentes e adultos"}</p>
-                </div>
-                <div>
-                  <div className="flexCenter" style={{ margin: "15px 0" }}>
-                    <h4 className="font30 extraBold">
-                      <a href="https://web.whatsapp.com/send/?phone=555548992112596&text=Ol%C3%A1%2C+vim+pelo+site%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consulta.&type=phone_number&app_absent=0" rel="noreferrer" target="_blank"><WhatsAppIcon fontSize="large" style={{padding: "0px 10px", verticalAlign: 'top', color: 'green'}}/>{"(48) 95741-4652"}</a>
-                    </h4>
+          <Advertising className="flexSpaceCenter">
+            <AddLeft>
+              <AddLeftInner>
+                <hr class="solid" width="15%" size="3" color="#945f62"  align="left"/>
+                <h2 className="font40 extraBold">Entre em Contato</h2>
+                <HeaderP className="font16">
+                Venha conhecer o meu espaço, sou psicóloga desde 2018, sou extremamente motivada em ajudar as pessoas a lidarem de uma forma melhor com os seus sentimentos e pensamentos. Convido você a embarcar no caminho mais frutífero que você poderia trilhar – esse processo chamado de Psicoterapia. Será um prazer ajudar você neste caminho! Vamos juntos?
+                </HeaderP>
+                <HeaderP className="font16">
+                Telefone: (00) 00000-0000
+                </HeaderP>
+                <HeaderP className="font16">
+                Endereço: Av. A-000, Nª 000, terceiro andar, sala 401 – Endereço completo – SP, 00000-000
+                </HeaderP>
+                <ButtonsRow className="flexCenter" style={{ margin: "10px 0", paddingTop:'30px' }}>
+                  <div style={{ width: "190px" }}>
+                    <FullButton title="Entre em Contato" action={() => alert("clicked")} />
                   </div>
-                </div>
-                <div style={{ margin: "30px 0" }} className="flexCenter">
-                  <p className="font16"><MailOutlineIcon fontSize="small" style={{padding: "0px 10px", verticalAlign: 'top'}}/>{"email@gmail.com"}</p>
-                </div>
-                <div style={{ margin: "30px 0", textAlign: "center"}} className="flexCenter">
-                  <p className="font14"><PlaceIcon fontSize="small" style={{padding: "0px 10px", verticalAlign: 'top'}}/>{"Rua Ana Pereira de Melo nº 000- Sala 000/ 10 andar . CEP 00000-000- São Paulo/SP"}</p>
-                </div>
-              </WrapperBox>
-            </TableBox>
-          </TablesWrapper>
+                </ButtonsRow>
+              </AddLeftInner>
+            </AddLeft>
+            <AddRight>
+              <Frame 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10344.838579903246!2d-46.65591624472126!3d-23.552177388496133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583653f4bba1%3A0x78d26862ec38e56c!2sCl%C3%ADnica%20Psicol%C3%B3gica%20%22Alvino%20Augusto%20de%20S%C3%A1%22%20-%20Universidade%20Presbiteriana%20Mackenzie!5e0!3m2!1spt-BR!2sbr!4v1683237873882!5m2!1spt-BR!2sbr" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              ></Frame>
+            </AddRight>
+          </Advertising>
         </div>
-      </div>
-      <div className="flexCenter whiteColor" style={{ margin: "30px 0"}}>
-        <InstagramIcon fontSize="large" style={{padding: "0px 10px"}}/><p className="font20 extraBold"><a className="whiteColor" href="https://www.instagram.com/" target="_blank" rel="noreferrer">{"@annaribeiro.psi"}</a></p>
       </div>
     </Wrapper>
   );
@@ -47,32 +47,97 @@ export default function Contact() {
 
 const Wrapper = styled.section`
   width: 100%;
-  padding: 120px;
+`;
+const Frame = styled.iframe`
+  width: 100%;
+  height: 300px;
+  border: 0;
+  position:relative;
+  top:-80px;
+  verticalAlign: "top"
+`;
+
+const HeaderInfo = styled.div`
   @media (max-width: 860px) {
-    padding: 100px 0px;
+    text-align: center;
   }
 `;
-const TablesWrapper = styled.div`
+const Advertising = styled.div`
+  padding: 100px 0;
+  position: relative;
+  @media (max-width: 1160px) {
+    padding: 60px 0 40px 0;
+  }
   @media (max-width: 860px) {
     flex-direction: column;
+    padding: 90px 0 30px 0;
   }
 `;
-const TableBox = styled.div`
-  width: 40%;
+const ButtonsRow = styled.div`
+  
+`;
+const AddLeft = styled.div`
+  position: relative;
+  width: 50%;
+  p {
+    max-width: 475px;
+  }
   @media (max-width: 860px) {
+    width: 80%;
+    order: 2;
+    text-align: center;
+    h2 {
+      line-height: 3rem;
+      margin: 15px 0;
+    }
+    p {
+      margin: 0 auto;
+    }
+  }
+`;
+const AddRight = styled.div`
+  width: 50%;
+  @media (max-width: 860px) {
+    width: 80%;
+    order: 2;
+  }
+`;
+const AddLeftInner = styled.div`
+  width: 100%;
+  position: absolute;
+  top: -300px;
+  left: 0;
+  @media (max-width: 1190px) {
+    top: -250px;
+  }
+  @media (max-width: 920px) {
+    top: -200px;
+  }
+  @media (max-width: 860px) {
+    order: 1;
+    position: relative;
+    top: -60px;
+    left: 0;
+  }
+`;
+const ImgWrapper = styled.div`
+  width: 100%;
+  padding: 0 15%;
+  img {
     width: 100%;
-    max-width: 370px;
-    margin: 0 auto
+    height: auto;
+  }
+  @media (max-width: 400px) {
+    padding: 0;
   }
 `;
 
-const WrapperBox = styled.div`
-  width: 100%;
-  text-align: left;
-  padding: 20px 30px;
+const HeaderP = styled.div`
+  padding: 15px 40px 15px 0;
+  line-height: 1.5rem;
+  @media (max-width: 960px) {
+    max-width: 100%;
+    padding: 15px 0 0 0;
+  }
 `;
-
-
-
-
 

@@ -5,6 +5,7 @@ import FullButton from "../Buttons/FullButton";
 // Assets
 import about from "../../assets/img/about1.jpg";
 import decor from "../../assets/img/decor.png";
+import { Link } from "react-scroll";
 
 export default function AboutMe() {
   return (
@@ -32,7 +33,9 @@ export default function AboutMe() {
                 </HeaderP>
                 <ButtonsRow className="flexCenter" style={{ margin: "10px 0" }}>
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Entre em Contato" action={() => alert("clicked")} />
+                    <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-60}>
+                      <FullButton title="Entre em Contato"/>
+                    </Link>
                   </div>
                 </ButtonsRow>
             </AddRight>
