@@ -74,7 +74,9 @@ const Advertising = styled.div`
   }
 `;
 const ButtonsRow = styled.div`
-  
+  @media (max-width: 860px) {
+    padding: 90px 0 30px 0;
+  }
 `;
 const AddLeft = styled.div`
   position: relative;
